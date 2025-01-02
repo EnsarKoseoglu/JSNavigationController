@@ -8,7 +8,7 @@
 
 import AppKit
 
-public protocol JSNavigationBarViewControllerProvider: class {
+public protocol JSNavigationBarViewControllerProvider: AnyObject {
     var navigationController: JSNavigationController? { get set }
 	func navigationBarViewController() -> NSViewController
 }

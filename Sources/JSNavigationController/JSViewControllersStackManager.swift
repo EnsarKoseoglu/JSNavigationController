@@ -10,7 +10,7 @@ import AppKit
 
 public typealias AnimationBlock = (_ fromView: NSView?, _ toView: NSView?) -> (fromViewAnimations: [CAAnimation], toViewAnimations: [CAAnimation])
 
-public protocol JSViewControllersStackManager: class {
+public protocol JSViewControllersStackManager: AnyObject {
 	/// The view in which views will be pushed.
 	var contentView: NSView? { get set }
 	/// The view controllers currently on the navigation stack.
